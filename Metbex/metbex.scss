@@ -1,0 +1,106 @@
+$bg-color: #1e1e1e;
+$card-bg: #f1e9dd;
+$button-color: #a87446;
+$font-color: #000;
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: $bg-color;
+  color: $font-color;
+}
+
+.container {
+  padding: 2rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+
+  h1 {
+    color: #f1e9dd;
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  .logout {
+    background: transparent;
+    border: 1px solid #f1e9dd;
+    color: #f1e9dd;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+  }
+}
+
+.order-card {
+  background-color: $card-bg;
+  padding: 1.2rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+
+  h2 {
+    margin-top: 0;
+    font-size: 1.2rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin-bottom: 0.4rem;
+    }
+  }
+
+  .complete {
+    background-color: $button-color;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 0.8rem;
+  }
+}
+
+/* ✅ Responsive dizayn */
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    .logout {
+      align-self: flex-end;
+      margin-top: 0.5rem;
+    }
+  }
+
+  .order-card {
+    h2 {
+      font-size: 1rem;
+    }
+
+    .complete {
+      width: 100%;
+      text-align: center;
+      padding: 0.5rem;
+    }
+  }
+}
