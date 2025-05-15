@@ -1,0 +1,180 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(34, 24, 15);
+  color: rgb(224, 204, 165);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 0 1rem;
+}
+
+#loginForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+#loginForm .input-wrapper {
+  width: 100%;
+  background-color: rgb(29, 20, 13);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#loginForm .input-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #444;
+}
+#loginForm .input-group i {
+  color: rgb(122, 89, 46);
+}
+#loginForm .input-group input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+}
+#loginForm .input-group input::-moz-placeholder {
+  color: #bbb;
+}
+#loginForm .input-group input::placeholder {
+  color: #bbb;
+}
+#loginForm .input-group:last-child {
+  border-bottom: none;
+}
+#loginForm .btn {
+  padding: 0.75rem 2rem;
+  background-color: rgb(122, 89, 46);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+#loginForm .btn:hover {
+  background-color: rgb(122, 89, 46);
+}
+
+.login-card {
+  background-color: rgb(22, 15, 7);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .login-card {
+    max-width: 350px;
+    padding: 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .login-card {
+    max-width: 280px;
+    padding: 1rem;
+  }
+}
+
+.logo {
+  text-align: center;
+  height: 50px;
+}
+.logo img {
+  width: 80px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.form-group {
+  position: relative;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.form-group input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: rgb(29, 20, 13);
+  border: 2px solid transparent;
+  border-radius: 8px;
+  color: rgb(224, 204, 165);
+  transition: border 0.3s;
+}
+.form-group input:focus {
+  border-color: rgb(122, 89, 46);
+  outline: none;
+}
+.form-group .toggle-password {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: rgb(122, 89, 46);
+}
+
+.message {
+  font-size: 0.9rem;
+}
+.message.error {
+  color: #e74c3c;
+}
+.message.success {
+  color: #2ecc71;
+}
+
+.btn-login {
+  padding: 0.75rem 1rem;
+  background-color: rgb(122, 89, 46);
+  color: rgb(34, 24, 15);
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.btn-login:hover {
+  background-color: #553e20;
+}
+.btn-login.loading {
+  opacity: 0.6;
+  pointer-events: none;
+  position: relative;
+}
+.btn-login.loading::after {
+  content: "";
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  border: 2px solid #fff;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=main.css.map */
