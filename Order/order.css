@@ -1,0 +1,103 @@
+body {
+  background-color: #1f1a17;
+  color: #fff;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.order-container {
+  background-color: #2b241f;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 400px;
+}
+@media (max-width: 480px) {
+  .order-container {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+header .menu-icon {
+  font-size: 1.5rem;
+}
+header .logout {
+  color: #c89b6c;
+  text-decoration: none;
+  font-weight: bold;
+}
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
+
+.order-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.order-table th, .order-table td {
+  padding: 0.75rem;
+  text-align: left;
+}
+.order-table thead {
+  border-bottom: 1px solid #555;
+}
+.order-table tfoot {
+  border-top: 1px solid #555;
+}
+.order-table tfoot .total-label {
+  text-align: left;
+  font-weight: bold;
+}
+.order-table tfoot .total-price {
+  text-align: right;
+  font-weight: bold;
+}
+@media (max-width: 480px) {
+  .order-table {
+    font-size: 0.9rem;
+  }
+  .order-table th, .order-table td {
+    padding: 0.5rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.buttons button {
+  background-color: #c89b6c;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  flex: 1;
+}
+.buttons button:hover {
+  opacity: 0.9;
+}
+@media (max-width: 480px) {
+  .buttons {
+    flex-direction: column;
+  }
+  .buttons button {
+    width: 100%;
+  }
+}/*# sourceMappingURL=order.css.map */

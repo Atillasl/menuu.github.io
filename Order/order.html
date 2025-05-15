@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Order</title>
+  <link rel="stylesheet" href="order.css">
+</head>
+<body>
+  <div class="order-container">
+    <header>
+      <div class="menu-icon">☰</div>
+      <h1>Order</h1>
+      <a class="logout" href="#">Logout</a>
+    </header>
+
+    <table class="order-table">
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Price</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Chicken Wings</td><td>$0.00</td><td>1</td></tr>
+        <tr><td>Nachos</td><td>$8.00</td><td>1</td></tr>
+        <tr><td>Burger</td><td>$2.00</td><td>1</td></tr>
+        <tr><td>Fries</td><td>$4.00</td><td>1</td></tr>
+        <tr><td>Burger</td><td>$2.00</td><td>1</td></tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2" class="total-label">Total:</td>
+          <td class="total-price">$46.00</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <div class="buttons">
+      <button class="send">Send</button>
+      <button class="cancel">Cancel</button>
+    </div>
+  </div>
+</body>
+</html>
