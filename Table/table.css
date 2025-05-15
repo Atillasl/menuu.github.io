@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: rgb(34, 24, 15);
+  color: #fefefe;
+}
+
+.page-header {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: rgb(34, 24, 15);
+}
+
+.table-selection {
+  padding: 1rem;
+}
+
+.tables-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1.2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.table {
+  position: relative;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: rgb(34, 24, 15);
+  transition: transform 0.3s ease;
+}
+.table:hover {
+  transform: scale(1.05);
+}
+.table .sekil {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+}
+.table[data-status=available] {
+  background-color: rgb(34, 24, 15);
+  color: white;
+}
+.table[data-status=occupied] {
+  background-color: rgb(34, 24, 15);
+  color: white;
+}
+.table[data-status=reserved] {
+  background-color: rgb(34, 24, 15);
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .page-header {
+    font-size: 1.5rem;
+  }
+  .table {
+    font-size: 0.9rem;
+  }
+}
+.table {
+  position: relative;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: transform 0.3s ease;
+  border: 3px solid transparent;
+}
+.table:hover {
+  transform: scale(1.05);
+}
+.table[data-status=available] {
+  border-color: green;
+}
+.table[data-status=reserved] {
+  border-color: red;
+}
+.table .cancel-btn {
+  display: none;
+  margin-top: 0.5rem;
+  padding: 0.3rem 0.6rem;
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.table.reserved .cancel-btn {
+  display: block;
+}
+
+.status-text {
+  background-color: red;
+  border: white solid 1px;
+  border-radius: 8px;
+}
+
+.order-btn {
+  border-radius: 8px;
+  background-color: green;
+  border: white solid 1px;
+  color: white;
+}/*# sourceMappingURL=table.css.map */
