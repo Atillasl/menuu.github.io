@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  background-color: #1a120d;
+  font-family: sans-serif;
+  color: #f5e8c7;
+}
+
+.bas {
+  display: flex;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #1a120d;
+  border-bottom: 1px solid #332c26;
+}
+.top-bar .menu-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.top-bar .title {
+  font-size: 1.8rem;
+  margin: 0;
+}
+.top-bar .logout {
+  color: #d5aa6d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.category-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-right: 1rem;
+}
+.category-list button {
+  background: transparent;
+  border: 1px solid #332c26;
+  color: #d5aa6d;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: left;
+}
+.category-list button.active {
+  background-color: #d5aa6d;
+  color: #1a120d;
+  font-weight: bold;
+}
+
+.items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+  flex: 1;
+}
+.items-grid .item {
+  border: 1px solid #332c26;
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: center;
+  background-color: transparent;
+}
+.items-grid .item span {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.items-grid .item strong {
+  color: #d5aa6d;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .category-list {
+    flex-direction: row;
+    overflow-x: auto;
+    margin: 0 0 1rem 0;
+    padding-bottom: 0.5rem;
+  }
+  .category-list button {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+  .items-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  }
+}
+@media (max-width: 480px) {
+  .items-grid {
+    grid-template-columns: 1fr;
+  }
+  .top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  .top-bar .title {
+    font-size: 1.5rem;
+  }
+  .top-bar .logout {
+    align-self: flex-end;
+  }
+}/*# sourceMappingURL=menu.css.map */

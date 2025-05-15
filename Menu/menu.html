@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link rel="stylesheet" href="menu.css" />
+</head>
+
+<body>
+    <header class="top-bar">
+    <div class="bas">
+      <div class="menu-icon">&#9776;</div>
+      <h1 class="title">Menu</h1>
+    </div>
+    <a href="#" class="logout">Logout</a>
+  </header>
+
+  <div class="container">
+    <aside class="category-list">
+      <button class="active">Appetizers</button>
+      <button>Main Courses</button>
+      <button>Sides</button>
+      <button>Desserts</button>
+      <button onclick="sendOrder()">Sifarişi göndər</button>
+    </aside>
+
+    <main class="items-grid">
+      <div class="item" data-name="Nachos" data-price="8"><span>Nachos</span><strong>$8.00</strong></div>
+      <div class="item" data-name="Chicken Wings" data-price="10"><span>Chicken Wings</span><strong>$10.00</strong></div>
+      <div class="item" data-name="Burger" data-price="12"><span>Burger</span><strong>$12.00</strong></div>
+      <div class="item" data-name="Steak" data-price="18"><span>Steak</span><strong>$18.00</strong></div>
+      <div class="item" data-name="Fish & Chips" data-price="15"><span>Fish & Chips</span><strong>$15.00</strong></div>
+      <div class="item" data-name="Fries" data-price="4"><span>Fries</span><strong>$4.00</strong></div>
+      <div class="item" data-name="Onion Rings" data-price="5"><span>Onion Rings</span><strong>$5.00</strong></div>
+      <div class="item" data-name="Coleslaw" data-price="3"><span>Coleslaw</span><strong>$3.00</strong></div>
+    </main>
+  </div>
+</body>
+
+</html>
